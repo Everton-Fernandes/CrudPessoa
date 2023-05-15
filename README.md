@@ -33,14 +33,13 @@ necessário.
 ------------------
 
 Requisitos Funcionais:
- • Não é permitido cadastrar mais de uma pessoa com o mesmo CPF.
- • Não é permitido cadastrar mais de uma pessoa com o mesmo email.
- • Uma mesma pessoa pode ter mais de um endereço diferente cadastrado.
+- Não é permitido cadastrar mais de uma pessoa com o mesmo CPF.
+- Não é permitido cadastrar mais de uma pessoa com o mesmo email.
+- Uma mesma pessoa pode ter mais de um endereço diferente cadastrado.
 
 --------------------
 
 Requisitos Técnicos:
- • A API deve ser construída preferencialmente (mas não exclusivamente) em Java. (Pode-se utilizar
-qualquer framework)
- • É necessário aplicar conceitos de orientação a objetos.
- • Utilização de um banco de dados relacional.
+- A API deve ser construída preferencialmente (mas não exclusivamente) em Java. (Pode-se utilizar qualquer framework)
+- É necessário aplicar conceitos de orientação a objetos.
+- Utilização de um banco de dados relacional.
