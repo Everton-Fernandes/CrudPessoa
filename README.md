@@ -10,20 +10,23 @@ Desafio proposto foi criar uma API REST com funcionalidades CRUD para o objeto "
 -------------
 
 O objeto "Pessoa" deve possuir os seguintes atributos:
- • ID (Chave Primária)
- • Nome
- • Email
- • CPF
- • Endereço
+
+- ID (Chave Primária)
+- Nome
+- Email
+- CPF
+- Endereço
+
 O atributo "Endereço" deve conter os seguintes campos:
- • CEP
- • Logradouro
- • Complemento
- • Bairro
- • Cidade
- • UF
- • Latitude
- • Longitude
+- CEP
+- Logradouro
+- Complemento
+- Bairro
+- Cidade
+- UF
+- Latitude
+- Longitude
+
 Os atributos mencionados acima são os requisitos mínimos, mas você pode adicionar outros campos, se
 necessário.
 
