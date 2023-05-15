@@ -1,0 +1,31 @@
+package com.desafio.crudpessoa.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.desafio.crudpessoa.entities.Pessoa;
+import com.desafio.crudpessoa.repositories.PessoaRepository;
+
+@RestController
+@RequestMapping(value = "/pessoas")
+public class PessoaController {
+
+	@Autowired
+	private PessoaRepository repository;
+	
+	@GetMapping("/w")
+    @ResponseBody
+    public String welcome() {
+        return "Welcome to RestTemplate Example.";
+    }
+	@GetMapping
+	public List<Pessoa> FindAll(){
+		List<Pessoa> result = repository.findAll();
+		return result;
+	}
+}

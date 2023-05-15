@@ -1,0 +1,29 @@
+package com.desafio.crudpessoa.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.desafio.crudpessoa.entities.Pessoa;
+import com.desafio.crudpessoa.repositories.PessoaRepository;
+
+@RestController
+@RequestMapping(value = "/pessoas")
+public class PessoaController {
+
+	@Autowired
+	private PessoaRepository repository;
+	
+	public void Teste() {
+		System.out.println(repository.toString());
+	}
+	
+	@GetMapping
+	public List<Pessoa> findAll(){
+		List<Pessoa> result = repository.findAll();
+		return result;
+	}
+}

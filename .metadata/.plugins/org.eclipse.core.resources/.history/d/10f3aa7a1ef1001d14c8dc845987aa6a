@@ -1,0 +1,54 @@
+package com.desafio.crudpessoa.entities;
+
+public class Pessoa {
+	private Long id;
+	private String nome;
+	private String email;
+	private Long cpf;
+	private Object endereço;
+
+	public Pessoa() {
+
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Long getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(Long cpf) {
+		this.cpf = cpf;
+	}
+
+	public Object getEndereço() {
+		return endereço;
+	}
+
+	public void setEndereço(Object endereço) {
+		this.endereço = endereço;
+	}
+
+}

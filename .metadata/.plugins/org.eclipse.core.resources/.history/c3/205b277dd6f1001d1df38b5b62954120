@@ -1,0 +1,71 @@
+package com.desafio.crudpessoa.entities;
+
+import jakarta.persistence.CascadeType;
+import java.util.List;
+import java.util.ArrayList;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_Pessoa")
+public class Pessoa {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String nome;
+	private String email;
+	private Long cpf;
+	
+	@OneToMany(cascade = CascadeType.ALL )
+	@JoinColumn(name = "endereco_id")
+	private ArrayList<Endereco> endereco =  new ArrayList<>();
+
+	public Pessoa() {
+
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Long getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(Long cpf) {
+		this.cpf = cpf;
+	}
+	
+	public ArrayList<Endereco> getEndereco() {
+		return endereco;
+	}
+	
+	public void setEndereco(ArrayList<Endereco> endereco) {
+		this.endereco = endereco;
+	}
+}

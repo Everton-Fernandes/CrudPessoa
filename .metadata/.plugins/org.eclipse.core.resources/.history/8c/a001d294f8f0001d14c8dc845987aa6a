@@ -1,0 +1,14 @@
+package com.desafio.crudpessoa.entities;
+
+public class Endereço {
+	private Long cep;
+	private String logradouro;
+	private String complemento;
+	private String bairro;
+	private String cidade;
+	private String uf;
+	private Long latitude;
+	private Long longitude;
+	
+	public Endereco
+}
